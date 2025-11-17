@@ -1,0 +1,8 @@
+// To Introduce Myself
+#include <stdio.h>
+int main()
+{
+    printf("My name is Suraj\n");
+    printf("I am 18 Years old\n");
+    printf("I am From Bangalore\n");
+}
