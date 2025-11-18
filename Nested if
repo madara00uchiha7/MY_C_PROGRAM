@@ -1,0 +1,24 @@
+#include<stdio.h>
+ int main()
+{
+  int age;
+  float id;
+  printf("Enter Your age\n");
+  scanf("%d", &age);
+  if(age>=18)
+  {
+  printf("ELIGIBLE IN THE CLASS\n");
+  printf("Enter Your Id number\n");
+  scanf("%f",&id);
+  if(id<=25)
+  {
+      printf("ID CONFIRMED\n");
+  }
+  else{
+      printf("GOOD BYE\n");
+  }
+  }
+  else{
+      printf("GOOD BYE\n");
+  }
+}
