@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    float a,b;
+    printf("Enter the two Numbers\n");
+    scanf("%f%f",&a,&b);
+    printf("SUM IS : %f\n",a+b);
+    printf("DIFFERENCE IS : %f\n",a-b);
+    printf("PRODUCT IS : %f\n",a*b);
+    if(b!=0)
+        printf("QUOTITENT IS : %f", a/b);
+    else
+        printf("BYE BABBU\n");
+} 
