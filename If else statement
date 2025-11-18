@@ -1,0 +1,16 @@
+ #include<stdio.h>
+ int main()
+{
+  int age;
+  printf("Enter the Age\n");
+  scanf("%d",&age);
+  if(age>=18)
+  {
+      printf("YOU ARE ELIGIBLE TO TAKE DRIVING LICENSE\n");
+      }
+      else{
+          printf("YOU ARE NOT A ELIGIBLE\n");
+          
+      }
+      
+  }
