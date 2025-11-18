@@ -1,0 +1,11 @@
+#include <stdio.h>
+int madarauchiha()
+{
+    printf("RAJINIKANTH\n");
+    printf("CHINNU\n");
+    printf("RCB\n");
+}
+int main()
+{
+    madarauchiha();
+}
