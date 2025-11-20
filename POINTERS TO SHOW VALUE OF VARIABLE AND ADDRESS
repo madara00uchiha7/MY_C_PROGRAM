@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main(){
+    int x;
+    printf("Enter the value of x\n");
+    scanf("%d",&x);
+    int*ptr=&x;
+    printf("%p\n",ptr);  //ADDRESS
+    printf("%d\n",*ptr); //VALUE
+}
