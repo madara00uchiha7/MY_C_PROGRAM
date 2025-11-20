@@ -1,0 +1,10 @@
+#include <stdio.h>
+float simpleInterest(float p, float r, float t) {
+    return (p * r * t) / 100;
+}
+int main() {
+    float p, r, t, si;                  printf("Enter Principal Amount,Rate of interset, time\n");
+    scanf("%f%f%f", &p,&r,&t);
+   si = simpleInterest(p, r, t);
+   printf("Simple Interest = %.2f\n", si);
+}
