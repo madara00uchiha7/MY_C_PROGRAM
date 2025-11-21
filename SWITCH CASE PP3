@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main(){
+    int id;
+    int PAN = 1111;
+    int AADHAR = 2222;
+    int AAPAR = 3333;
+    int DL = 4444;
+    printf("Enter your unique ID\n");
+    scanf("%d",&id);
+    switch(id){
+        case 1111:
+        printf("PAN ID VERIFIED\n");
+        break;
+        case 2222:
+        printf("AADHAR ID VERIFIED\n");
+        break;
+        case 3333:
+        printf("AAPAR ID VERIFIED\n");
+        break;
+        case 4444:
+        printf("DL VERIFIED\n");
+        break;
+        default:
+            printf("NOT VERIFIED : NO MATCH FOUND IN KYC RECORDS");
+        }
+    }
+
