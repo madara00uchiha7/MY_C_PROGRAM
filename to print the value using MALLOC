@@ -1,0 +1,9 @@
+int main() {
+    int *p;
+    p = (int*)malloc(sizeof(int));
+    printf("Enter the value of p: ");
+    scanf("%d", p);  
+    printf("Value is %d\n", *p);
+    free(p);
+    return 0;
+}
