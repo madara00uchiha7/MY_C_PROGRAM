@@ -1,0 +1,17 @@
+#include<stdio.h>
+int account(float *a,float *b){
+    float temp;
+    temp=*a;
+    *a=*b;
+    *b=temp;
+};
+ int main(){
+     float x,y;
+     printf("Enter the amount in first account\n");
+     scanf("%f",&x);
+     printf("Enter the amount in second account\n");
+     scanf("%f",&y);
+     printf("Before swapping : amount in first  account is %f\n and second account is %f\n",x,y);
+     account(&x,&y);
+     printf("After swapping : amount in first account is %f\n and amount in second account is %f\n",x,y);
+ }   
