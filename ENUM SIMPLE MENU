@@ -1,0 +1,23 @@
+#include<stdio.h>
+enum operation{
+    ADD = 1,
+    SUBTRACT,
+    MULTIPLICATION,
+    DIVIDE,
+};
+int main(){
+    enum operation n;
+    printf("Enter the operation (1-4)\n");
+    scanf("%d",&n);
+    if(n==ADD){
+        printf("You choose Addition\n");
+    }
+    else if(n==SUBTRACT){
+        printf("You choose Subtraction\n");
+    }
+    else{
+        printf("You choose other option\n");
+    }
+}
+    
+    
