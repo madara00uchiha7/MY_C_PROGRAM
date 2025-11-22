@@ -1,0 +1,22 @@
+#include<stdio.h>
+int swapbyvalue(int a,int b){
+    int temp=a;
+    a=b;
+    b=temp;
+    printf("Before swap(by value):%d %d\n",a,b);
+}
+int swapbyreference(int*a,int*b){
+    int temp=*a;
+    *a=*b;
+    *b=temp;
+    printf("Before swap(by reference): %d %d\n",*a,*b);
+}
+int main(){
+    int x,y;
+    printf("Enter two currency values\n");
+    scanf("%d %d",&x,&y);
+    swapbyvalue(x,y);
+    printf("After call by value : %d %d\n",x,y);
+    swapbyreference(&x,&y);
+    printf("After call by reference : %d %d\n",x,y);
+}
