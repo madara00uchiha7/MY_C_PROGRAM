@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    int B, P;
+    printf("Enter number of branches: ");
+    scanf("%d", &B);
+    printf("Enter number of products: ");
+    scanf("%d", &P);
+    int units[B][P];
+    float revenuePerUnit[P];
+    float totalRevenue[B];
+    for (int i = 0; i < B; i++) {
+        printf("\nEnter units shipped for branch %d:\n", i + 1);
+        for (int j = 0; j < P; j++) {
+            printf("  Product %d: ", j + 1);
+            scanf("%d", &units[i][j]);
+        }
+    }
+   printf("\nEnter revenue per unit for each product:\n");
+    for (int j = 0; j < P; j++) {
+        printf("  Product %d: ", j + 1);
+        scanf("%f", &revenuePerUnit[j]);
+    }
+  for (int i = 0; i < B; i++) {
+        totalRevenue[i] = 0;
+        for (int j = 0; j < P; j++) {
+            totalRevenue[i] += units[i][j] * revenuePerUnit[j];
+        }
+    }
+   printf("\nTotal revenue per branch:\n");
+    for (int i = 0; i < B; i++) {
+        printf("Branch %d: %.2f\n", i + 1, totalRevenue[i]);
+    }
+}
