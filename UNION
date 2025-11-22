@@ -1,0 +1,20 @@
+#include<stdio.h>
+union op{
+    char name[20];
+    int age;
+    float marks;
+};
+int main(){
+    union op d;
+    printf("Enter the name\n");
+    scanf("%s",d.name);
+    printf("NAME : %s\n",d.name);
+    printf("Enter the age\n");
+    scanf("%d",&d.age);
+    printf("AGE : %d\n",d.age);
+    printf("Enter the marks\n");
+    scanf("%f",&d.marks);
+    printf("MARKS : %f",d.marks);
+}
+ 
+    
